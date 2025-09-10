@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillHub - Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="main-header glass-effect">
+    <div class="container flex-between">
+        <a href="index.html" class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>SkillHub</span>
+        </a>
+        <nav class="main-nav">
+            <a href="portfolio-showcase.html">Explore Portfolios</a>
+            <a href="portfolio-creation.html">Create Portfolio</a>
+            <a href="login.html">Log In</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </nav>
+    </div>
+</header>
+
+<div id="page-signup" class="auth-page">
+  <div class="background-animation"></div>
+  <div class="auth-container">
+      <div class="auth-form-wrapper glass-effect">
+          <div class="form-header">
+              <h1>Create Your Account</h1>
+              <p>Join our community of students and professionals</p>
+          </div>
+
+          <!-- Signup Form -->
+          <form id="signup-form" class="auth-form" novalidate>
+              <div class="form-group">
+                  <div class="input-wrapper">
+                      <i class="fas fa-user icon"></i>
+                      <input type="text" id="name" name="name" placeholder="Full Name" required>
+                      <span class="input-line"></span>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="input-wrapper">
+                      <i class="fas fa-envelope icon"></i>
+                      <input type="email" id="email" name="email" placeholder="Email Address" required>
+                      <span class="input-line"></span>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="input-wrapper">
+                      <i class="fas fa-lock icon"></i>
+                      <input type="password" id="password" name="password" placeholder="Password" required>
+                      <span class="input-line"></span>
+                      <button type="button" class="password-toggle" id="togglePassword">
+                          <i class="fas fa-eye"></i>
+                      </button>
+                  </div>
+              </div>
+
+              <!-- Captcha -->
+              <div class="captcha-section">
+                  <div class="captcha-box glass-effect">
+                      <canvas id="captchaCanvas" width="200" height="50"></canvas>
+                      <button type="button" id="refreshCaptcha" class="refresh-btn">
+                          <i class="fas fa-sync-alt"></i>
+                      </button>
+                  </div>
+                  <div class="form-group">
+                      <div class="input-wrapper">
+                          <i class="fas fa-shield-alt icon"></i>
+                          <input type="text" id="captchaInput" placeholder="Enter Captcha" required>
+                          <span class="input-line"></span>
+                      </div>
+                  </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                  <span class="btn-text">Create My Account</span>
+                  <span class="btn-loader"></span>
+              </button>
+
+              <div class="form-footer">
+                  <p>Already have an account? <a href="login.html">Log In</a></p>
+              </div>
+          </form>
+      </div>
+  </div>
+
+  <!-- Animated background shapes -->
+  <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="main-footer glass-effect">
+    <div class="container flex-between">
+        <p>&copy; 2025 Student Skill Portfolio Hub</p>
+        <nav class="footer-nav">
+            <a href="portfolio-showcase.html">Portfolios</a>
+            <a href="portfolio-creation.html">Create Portfolio</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/auth.js"></script>
+<script src="js/captcha.js"></script>
+</body>
+</html>

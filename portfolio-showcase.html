@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillHub - Portfolio Showcase</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="page-showcase">
+
+  <!-- Header -->
+  <header class="main-header glass-effect">
+      <div class="container flex-between">
+          <a href="index.html" class="logo">
+              <i class="fas fa-graduation-cap"></i>
+              <span>SkillHub</span>
+          </a>
+          <nav class="main-nav">
+              <a href="portfolio-showcase.html">Explore Portfolios</a>
+              <a href="portfolio-creation.html">Create Portfolio</a>
+              <a href="login.html">Log In</a>
+              <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </nav>
+      </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="showcase-container container">
+      <aside class="filters">
+          <h2>Filter By Skill</h2>
+          <div id="filter-buttons">
+              <button class="btn active" data-filter="all">All</button>
+              <button class="btn" data-filter="javascript">JavaScript</button>
+              <button class="btn" data-filter="html">HTML</button>
+              <button class="btn" data-filter="css">CSS</button>
+              <button class="btn" data-filter="ux">UX Design</button>
+          </div>
+      </aside>
+      <section id="portfolio-grid" class="portfolio-grid"></section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer glass-effect">
+      <div class="container flex-between">
+          <p>&copy; 2025 Student Skill Portfolio Hub</p>
+          <nav class="footer-nav">
+              <a href="portfolio-showcase.html">Portfolios</a>
+              <a href="portfolio-creation.html">Create Portfolio</a>
+              <a href="signup.html">Sign Up</a>
+              <a href="login.html">Log In</a>
+              <a href="index.html">Home</a>
+          </nav>
+      </div>
+  </footer>
+
+</div>
+</body>
+</html>
